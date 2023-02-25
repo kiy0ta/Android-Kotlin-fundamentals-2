@@ -3,6 +3,7 @@ package com.example.androidkotlinfundamentals2
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 
 // AppCompatActivityActivityは、古いバージョンの Android との下位互換性を提供しながら、
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
-        Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
+//        Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
+        val randomInt: Int = (1..6).random()
+        val resultText: TextView = findViewById(R.id.result_text)
+        resultText.text = randomInt.toString()
     }
 }

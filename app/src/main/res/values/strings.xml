@@ -2,5 +2,6 @@
     <!-- 言語ごとに文字列リソース ファイルを作成する必要があるため、アプリの翻訳とローカライズには文字列リソースが必須です -->
     <string name="app_name">Android Kotlin fundamentals2</string>
     <string name="roll_label">Roll</string>
+    <string name="c">Dice Rolled!</string>
 
 </resources>
